@@ -60,6 +60,13 @@ h2 {
     gap: 20px;
 }
 
+.project-thumb {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
 .project-item {
     background: #f4f4f4;
     padding: 1rem;
