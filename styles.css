@@ -118,5 +118,23 @@ footer {
     .blog-posts {
         grid-template-columns: 1fr;
     }
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    display: none;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#scrollTopBtn:hover {
+    background-color: #555;
+}
+
 }
 
