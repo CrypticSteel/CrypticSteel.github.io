@@ -2,79 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Cybersecurity Professional Portfolio and Blog" />
   <title>Justin Phelps | Cybersecurity Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary: #0f172a;
-      --accent: #38bdf8;
-      --background: #f8fafc;
-      --card-bg: #ffffff;
-      --text: #1e293b;
-    }
-    </style>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <h1>Justin Phelps</h1>
-    <p>Cybersecurity Professional | Analyst | Educator</p>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>Justin Phelps</h1>
+      <p>Cybersecurity Professional</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <div class="card">
-      <p>I’m a cybersecurity professional with experience in penetration testing, threat hunting, and vulnerability analysis. I’m passionate about securing digital systems and helping others grow in the cybersecurity space.</p>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <h2>Featured Projects</h2>
-    <div class="project-grid">
-      <div class="card">
-        <h3>Active Directory Lab Build</h3>
-        <p>Designed a Windows AD environment with common misconfigurations for offensive security testing and Purple Team training.</p>
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I’m a cybersecurity professional focused on penetration testing, network defense, and simplifying cyber education for everyone. With hands-on experience and a love for ethical hacking, I enjoy building secure systems and breaking the insecure ones (ethically).</p>
       </div>
-      <div class="card">
-        <h3>FTP Exfiltration Analyzer</h3>
-        <p>Python-based script to parse PCAP files and extract FTP sessions used for data exfiltration detection.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="blog" class="section">
-    <h2>Blog</h2>
-    <div class="blog-posts">
-      <div class="card">
-        <h3>Why You Should Build a Home Lab</h3>
-        <p>Home labs help sharpen your skills in a safe environment. Here’s how I set mine up and what tools I use. <a href="#">Read more</a></p>
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>FTP Log Analyzer</h3>
+            <p>A Python tool that parses PCAP files to detect suspicious FTP activity and potential exfiltration attempts.</p>
+          </div>
+          <div class="card">
+            <h3>Linux Hardening Script</h3>
+            <p>A Bash script to automatically audit and harden Ubuntu servers based on CIS benchmarks.</p>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <h3>Getting Started with Threat Hunting</h3>
-        <p>A beginner-friendly guide on using logs, SIEMs, and behavioral analysis to detect threats early. <a href="#">Read more</a></p>
+    </section>
+
+    <section id="blog" class="section">
+      <div class="container">
+        <h2>Blog</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Understanding CVEs</h3>
+            <p>A breakdown of how CVEs are published and how to prioritize them in real-world environments.</p>
+          </div>
+          <div class="card">
+            <h3>Top Tools for Pentesters in 2025</h3>
+            <p>My personal take on the most useful (and underrated) tools in the pentesting toolkit this year.</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <form id="contactForm">
-      <input type="text" id="name" name="name" placeholder="Your Name" required />
-      <input type="email" id="email" name="email" placeholder="Your Email" required />
-      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Justin Phelps. All rights reserved.</p>
-  </footer>
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <form id="contactForm">
+          <input type
