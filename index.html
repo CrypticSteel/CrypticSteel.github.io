@@ -1,94 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cybersecurity Professional Portfolio and Blog">
-    <title>Cybersecurity Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cybersecurity Professional Portfolio and Blog" />
+  <title>Justin Phelps | Cybersecurity Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #38bdf8;
+      --background: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background-color: var(--primary);
+      color: #fff;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav ul li a:hover {
+      color: var(--accent);
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+    .blog-posts .card {
+      margin-bottom: 1rem;
+    }
+    form {
+      display: grid;
+      gap: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    form input, form textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    form button {
+      background: var(--primary);
+      color: #fff;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #1e293b;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: var(--primary);
+      color: #cbd5e1;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Justin Phelps</h1>
-            <p>Cybersecurity Professional</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <h1>Justin Phelps</h1>
+    <p>Cybersecurity Professional | Analyst | Educator</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Experienced cybersecurity professional with a passion for protecting systems and educating others on cyber risks. Specializing in penetration testing, vulnerability analysis, and security protocols.</p>
-        </div>
-    </section>
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>I’m a cybersecurity professional with experience in penetration testing, threat hunting, and vulnerability analysis. I’m passionate about securing digital systems and helping others grow in the cybersecurity space.</p>
+    </div>
+  </section>
 
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-item">
-                    <h3>Project 1</h3>
-                    <p>Description of your cybersecurity project. Could be related to penetration testing, network security audits, etc.</p>
-                </div>
-                <div class="project-item">
-                    <h3>Network Scanner Tool</h3>
-                    <img src="images/network-scanner.png" alt="Network Scanner Screenshot" class="project-thumb">
-                    <p>A Python-based tool that scans for open ports on a list of IPs. Built with socket and threading modules.</p>
-                    <a href="https://github.com/yourusername/network-scanner" target="_blank">View on GitHub</a>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section id="projects" class="section">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+      <div class="card">
+        <h3>Active Directory Lab Build</h3>
+        <p>Designed a Windows AD environment with common misconfigurations for offensive security testing and Purple Team training.</p>
+      </div>
+      <div class="card">
+        <h3>FTP Exfiltration Analyzer</h3>
+        <p>Python-based script to parse PCAP files and extract FTP sessions used for data exfiltration detection.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="blog" class="section">
-        <div class="container">
-            <h2>Blog</h2>
-            <div class="blog-posts">
-                <article class="post">
-                    <h3>Blog Post 1</h3>
-                    <p>Summary of the blog post about the latest in cybersecurity, penetration testing, or industry trends. <a href="#">Read more</a></p>
-                </article>
-                <article class="post">
-                    <h3>Blog Post 2</h3>
-                    <p>Another blog post discussing an important cybersecurity topic, personal experience, or tool. <a href="#">Read more</a></p>
-                </article>
-            </div>
-        </div>
-    </section>
+  <section id="blog" class="section">
+    <h2>Blog</h2>
+    <div class="blog-posts">
+      <div class="card">
+        <h3>Why You Should Build a Home Lab</h3>
+        <p>Home labs help sharpen your skills in a safe environment. Here’s how I set mine up and what tools I use. <a href="#">Read more</a></p>
+      </div>
+      <div class="card">
+        <h3>Getting Started with Threat Hunting</h3>
+        <p>A beginner-friendly guide on using logs, SIEMs, and behavioral analysis to detect threats early. <a href="#">Read more</a></p>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form id="contactForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </section>
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+      <input type="email" id="email" name="email" placeholder="Your Email" required />
+      <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Your Name - Cybersecurity Professional</p>
-        </div>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Justin Phelps. All rights reserved.</p>
+  </footer>
 
-    <script src="scripts.js"></script>
-    <button id="scrollTopBtn" title="Go to top">↑</button>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      alert(`Thanks, ${name}! Your message has been received.`);
+    });
+  </script>
 </body>
 </html>
