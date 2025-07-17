@@ -74,11 +74,10 @@ h2 {
     flex: 1;
 }
 
-.blog-posts article {
-    background: #f9f9f9;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 5px;
+.blog-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 form {
@@ -114,3 +113,10 @@ footer {
     color: #fff;
     padding: 1rem 0;
 }
+
+@media (max-width: 768px) {
+    .blog-posts {
+        grid-template-columns: 1fr;
+    }
+}
+
